@@ -42,7 +42,7 @@ export class Main extends React.Component {
           <div className="welcome">
             <h2>Welcome!</h2>
             <p>Fifa has been my favorite video game for over a decade.   This app provides custom tactics, player instructions, strengths, and weaknesses for each Fifa Ultimate Team formation.  Once logged in, just select a formation from the dropdown and click submit.</p>
-            <Link id="start-link" to="/" onClick={() => this.setFormToLogin()}>Start</Link>
+            <Link id="start-link" to="/" onClick={() => this.setFormToLogin()}>START</Link>
           </div>
         )
     //show register form
@@ -66,7 +66,7 @@ export class Main extends React.Component {
 
     return (
         <div className="main">
-            <h1 id="main-title">FIFA FORMATIONS</h1>
+            <div id="main-title"><span>FIFA </span><span id="greenF">F</span>ORMATIONS</div>
             {form}
         </div>
     );
