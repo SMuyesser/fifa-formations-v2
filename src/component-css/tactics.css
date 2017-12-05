@@ -1,0 +1,63 @@
+/*******************************************************
+		CUSTOM TACTICS
+*******************************************************/
+
+div.tactics {
+	background-color: #181818;
+	display: flex;
+	overflow: hidden;
+	width: 50%;
+	flex-direction: column;
+	border-right: .25px solid #FF4200;
+	padding: 2px;
+}
+
+div.tactics div.tactics-all-cat {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+div.tactics-sub-cat {
+	margin-left:1px;
+	margin-right: 1px;
+}
+
+div.tactics ul {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+	margin-bottom: 2.5px;
+	font-size: .6em;
+}
+
+div.tactics ul li {
+	line-height: 1.25em;
+	font-size: 1.25em;
+	padding-left: 8px;
+}
+
+div.tactics h2 {
+	font-size: 1em;
+	margin: auto;
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
+	text-decoration: underline;
+}
+
+div.tactics h3 {
+	font-size: .75em;
+	margin: 0px;
+	width: 100%;
+	background-color: black;
+	border-bottom: 1.5px solid #292929;
+	text-align: center;
+}
+
+/*****************************
+	TACTICS: RESPONSIVE
+*****************************/
+@media screen and (min-width: 1024px) {
+	div.tactics {
+		border-radius: 10px 0px 0px 0px;
+	}
+}
