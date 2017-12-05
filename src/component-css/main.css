@@ -21,7 +21,7 @@ div.main div#main-title {
 	width: 100%;
 	text-align: center;
 	color: white;
-	font-size: 3em;
+	font-size: 2.75em;
 	background-color:rgba(0, 0, 0, 0.75);
 	line-height: 1.25em;
 	margin: 0px;
@@ -46,6 +46,9 @@ div.welcome {
 	display: flex;
 	flex-direction: column;
 	border-radius: 3px;
+    -webkit-box-shadow: 0 10px 6px -6px #444444;
+    -moz-box-shadow: 0 10px 6px -6px #444444;
+    box-shadow: 0 10px 6px -6px #444444;
 }
 
 div.main div.welcome p {
@@ -108,20 +111,21 @@ div.main a:hover {
 
 #login-form {
 	background-color:rgba(0, 0, 0, 0.75);
+	border-radius: 3px;
+	width: 96%;
 	margin: 20px auto;
     -webkit-box-shadow: 0 10px 6px -6px #444444;
     -moz-box-shadow: 0 10px 6px -6px #444444;
     box-shadow: 0 10px 6px -6px #444444;
-    width: 70%;
-    max-width: 500px;
-    border-radius: 10px;
-    padding: 10px;
-    border: 1.5px solid white;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    color: white;
-    overflow: hidden;
+	font-family: 'Cantarell', sans-serif;
+	padding-top: 5px;
+}
+
+p#demo-info {
+	color: white;
+	font-size: 12px;
+	margin: 0px auto;
+	padding: 0;
 }
 
 @-webkit-keyframes autofill {
@@ -137,9 +141,9 @@ input:-webkit-autofill {
 }
 
 h1.form-title {
-	font-weight: lighter;
-	margin: 10px auto 15px auto;
-	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FFFFFF , 0 0 30px #FFFFFF , 0 0 40px #00FCFF , 0 0 70px #00FCFF , 0 0 80px #0066FF , 0 0 100px #0066FF;
+	color: #2BE400;
+	margin: 2px auto 10px auto;
+	font-size: 1.5em;
 }
 
 label.login-form-label {
@@ -153,9 +157,8 @@ label.login-form-label {
 	align-content: center;
 	align-items: center;
 	margin: 2px auto 5px auto;
-	width: 95%;
+	width: 80%;
 	flex-direction: column;
-	padding: 0 10px;
 }
 
 #login-form div.form-input input {
@@ -164,11 +167,10 @@ label.login-form-label {
 	border: none;
 	border-bottom: 1.5px solid white;
 	width: 100%;
-	padding: 5px;
-	font-family: 'Merriweather', serif;
+	padding: 0px 0px 1px 5px;
 	font-size: 1.15em;
 	clear: right;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	color: white;
 }
 
@@ -188,32 +190,39 @@ label.login-form-label {
 
 div.form-error,
 div.form-warning {
-	color: white;
+	color: #2BE400;
 	font-size: .75em;
+	margin-top: 0px;
 }
 
 #login-form-btn {
-	background-color:rgba(0, 0, 0, 0.6);
-	color: white;
-	font-size: 1em;
-	padding: 10px 20px 10px 20px;
-	text-decoration: none;
-	border: 1.5px solid white;
-	margin: 10px auto;
-	-moz-transition: all .4s;
-    -o-transition: all .4s;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-	border-radius: 10px;
-	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #02BBBD;
+  background: #2ae400;
+  background-image: -webkit-linear-gradient(top, #2ae400, #1c8c00);
+  background-image: -moz-linear-gradient(top, #2ae400, #1c8c00);
+  background-image: -ms-linear-gradient(top, #2ae400, #1c8c00);
+  background-image: -o-linear-gradient(top, #2ae400, #1c8c00);
+  background-image: linear-gradient(to bottom, #2ae400, #1c8c00);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 100px;
+  margin: 10px auto;
+  border: none;
 }
 
 #login-form-btn:hover {
-	-webkit-border-radius: 28;
-	-moz-border-radius: 28;
-	border-radius: 28px;
-	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
-	cursor: pointer;
+  background: #7be85d;
+  background-image: -webkit-linear-gradient(top, #7be85d, #489432);
+  background-image: -moz-linear-gradient(top, #7be85d, #489432);
+  background-image: -ms-linear-gradient(top, #7be85d, #489432);
+  background-image: -o-linear-gradient(top, #7be85d, #489432);
+  background-image: linear-gradient(to bottom, #7be85d, #489432);
+  text-decoration: none;
 }
 
 div#loader.hidden {
@@ -221,38 +230,40 @@ div#loader.hidden {
 }
 
 #register-link,
-#login-link,
-#start-link {
-	font-size: 1em;
+#login-link {
 	position: static;
 	bottom: auto;
 	left: auto;
 	background-color: black;
 	padding: 10px;
+    -webkit-box-shadow: 0 10px 6px -6px #444444;
+    -moz-box-shadow: 0 10px 6px -6px #444444;
+    box-shadow: 0 10px 6px -6px #444444;
+    font-size: 15px;
 }
 
 form.register-form {
 	background-color:rgba(0, 0, 0, 0.75);
-	margin: 70px auto 20px auto;
+	border-radius: 3px;
+	width: 96%;
+	margin: auto;
+	margin-bottom: 20px;
     -webkit-box-shadow: 0 10px 6px -6px #444444;
     -moz-box-shadow: 0 10px 6px -6px #444444;
     box-shadow: 0 10px 6px -6px #444444;
-    width: 60%;
-    max-width: 500px;
-    border-radius: 10px;
-    padding: 0px 20px;
-    border: 1.5px solid white;
-    color: white;
+	font-family: 'Cantarell', sans-serif;
+	padding-top: 5px;
 }
 
 /* containers for each input and label */
 form.register-form div {
 	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin: 2px auto 5px auto;
+	width: 90%;
 	flex-direction: column;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
 }
 
 form.register-form div input {
@@ -284,8 +295,9 @@ form.register-form div input::-webkit-input-placeholder { /* Chrome/Opera/Safari
 
 /* error message span */
 form.register-form span {
-	color: white;
+	color: #2BE400;
 	font-size: .75em;
+	margin-top: 0px;
 }
 
 #register-btn-container {
@@ -296,27 +308,39 @@ form.register-form span {
 
 #register-form-submit-btn,
 #register-form-clear-btn {
-	background-color:rgba(0, 0, 0, 0.6);
-	color: white;
-	font-size: 1em;
-	padding: 10px 20px 10px 20px;
-	border: 1.5px solid white;
-	margin: 10px 2px;
-	-moz-transition: all .4s;
-    -o-transition: all .4s;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-    border-radius: 10px;
-	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #02BBBD;
+  background: #2ae400;
+  background-image: -webkit-linear-gradient(top, #2ae400, #1c8c00);
+  background-image: -moz-linear-gradient(top, #2ae400, #1c8c00);
+  background-image: -ms-linear-gradient(top, #2ae400, #1c8c00);
+  background-image: -o-linear-gradient(top, #2ae400, #1c8c00);
+  background-image: linear-gradient(to bottom, #2ae400, #1c8c00);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 100px;
+  margin: 10px auto;
+  border: none;
+}
+
+#register-form-clear-btn {
+	font-size: 15px;
+	width: 150px;
 }
 
 #register-form-submit-btn:hover,
 #register-form-clear-btn:hover {
-	-webkit-border-radius: 28;
-	-moz-border-radius: 28;
-	border-radius: 28px;
-	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
-	cursor: pointer;
+  background: #7be85d;
+  background-image: -webkit-linear-gradient(top, #7be85d, #489432);
+  background-image: -moz-linear-gradient(top, #7be85d, #489432);
+  background-image: -ms-linear-gradient(top, #7be85d, #489432);
+  background-image: -o-linear-gradient(top, #7be85d, #489432);
+  background-image: linear-gradient(to bottom, #7be85d, #489432);
+  text-decoration: none;
 }
 
 /*****************************
@@ -327,48 +351,8 @@ form.register-form span {
 
 	div.main {
 		background-image: url('../images/fifa-background-mobile-large.png');
-	}
-
-	#login-form,
-	form.register-form {
-		display: block;
-		line-height: 1em;
-		margin: 85px auto 10px auto;
-		padding: 0px;
-	}
-
-	#login-form input,
-	form.register-form input {
-		max-width: 300px;
-	}
-
-	form.register-form {
-		margin: 50px auto 10px auto;
-		font-size: .5em;
-	}
-
-	form.register-form div {
-		width: 90%;
-		margin-top: 1px;
-		margin-bottom: 1px;
-	}
-
-	#login-form button {
-		margin: 2px auto;
-	}
-
-	#register-link {
-		font-size: .8em;
-	}
-
-	#login-link {
-		margin: 30px auto 10px auto;
-		font-size: .8em;
-	}
-
-	#demo-info {
-		margin: 7px;
-		font-size: .8em;
+		overflow-y: auto;
+		vertical-align: middle;
 	}
 }
 
@@ -376,14 +360,7 @@ form.register-form span {
 
 	div.main {
 		background-image: url('../images/fifa-background.jpg');
-	}
-
-	form.register-form {
-		font-size: 1em;
-	}
-
-	div.main div.welcome {
-		width: 60%;
-		margin: auto;
+		overflow-y: auto;
+		vertical-align: middle;	
 	}
 }

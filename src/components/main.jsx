@@ -59,7 +59,6 @@ export class Main extends React.Component {
             <div className="form-container">
                 <LoginForm />
                 <Link id="register-link" to="/" onClick={() => this.setFormToRegister()}>Register New Player</Link>
-                <p id="demo-info">Demo = Player: DemoPlayer | Password: Demo1234</p>
             </div>
         )
     }
