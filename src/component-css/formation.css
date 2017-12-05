@@ -3,7 +3,7 @@
 *******************************************************/
 
 div.formation {
-	background-image: url(../images/backgroundmobile.jpg);
+	background-image: url(../images/fifa-background-mobile-small.png);
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
@@ -80,7 +80,7 @@ button#logout:hover {
 @media screen and (min-width: 475px) and (max-width: 749px) {
 
 	div.formation {
-		background-image: url('../images/background desktop.jpg');
+		background-image: url('../images/fifa-background-mobile-large.png');
 		display: flex;
 		align-items: center;
 		height: 100vh;
@@ -126,7 +126,7 @@ button#logout:hover {
 @media screen and (min-width: 1024px) {
 
 	div.formation {
-		background-image: url('../images/background desktop.jpg');
+		background-image: url('../images/fifa-background.jpg');
 		display: flex;
 		align-items: center;
 		height: 100vh;

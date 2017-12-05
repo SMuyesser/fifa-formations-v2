@@ -68,8 +68,7 @@ export class FormationSelector extends React.Component {
 
         return (
             <div className="formation-selector">
-            	<h1>FIFA Formations</h1>
-				<FormationImage />
+            	<div id="main-title"><span>FIFA </span><span id="greenF">F</span>ORMATIONS</div>
             	<div className="select-formation" id="select-formation">
 	                <p>Select formation:</p>
 					<form className="select-formation-form-group">
@@ -79,6 +78,7 @@ export class FormationSelector extends React.Component {
 					    <input type="submit" onClick={e => this.setFormation(e)}></input>
 					</form>	
 				</div>
+				<FormationImage />
             </div>
         );
     }
