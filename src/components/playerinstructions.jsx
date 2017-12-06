@@ -12,7 +12,7 @@ export class PlayerInstructions extends React.Component {
                 <h2>Player Instructions</h2>
                 <div className="all-instructions">
                     <div className="fwd-container">
-                        <h3>Forwards</h3>
+                        <h3 id="fwd-header">Forwards</h3>
                     	<ul className="fwd-instructions">
         	            	{this.props.fwdInstructions.map((instructions, index) => {
         	            		return <li key={index}>-{instructions}</li>
