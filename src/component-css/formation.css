@@ -12,6 +12,7 @@ div.formation {
 	color: white;
 	font-family: 'Cantarell', sans-serif;
 	overflow-y: scroll;
+	line-height: 1.25em;
 }
 
 div.formation div.tactics-instr-combo {
@@ -58,11 +59,6 @@ button#logout:hover {
 	FORMATION: RESPONSIVE
 *****************************/
 
-@media screen and (min-width: 345px) {
-	div.formation div.tactics-instr-combo {
-		margin-top: 200px;
-	}	
-}
 
 @media screen and (min-width: 360px) {
 	
@@ -71,7 +67,7 @@ button#logout:hover {
 	}
 
 	div.formation div.tactics-instr-combo {
-		margin-top: 190px;
+		margin-top: 220px;
 	}
 }
 
@@ -84,11 +80,11 @@ button#logout:hover {
 
 @media screen and (min-width: 400px) {
 	
-	div.formation {
-		font-size: 1.4em;
+	div.formation div.tactics-instr-combo {
+		margin-top: 205px;
 	}
-
 }
+
 
 @media screen and (min-width: 475px) and (max-width: 749px) {
 

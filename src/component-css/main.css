@@ -363,4 +363,8 @@ form.register-form span {
 		overflow-y: auto;
 		vertical-align: middle;	
 	}
+
+	div.welcome {
+		width: 300px;
+	}
 }
